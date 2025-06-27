@@ -63,6 +63,8 @@ Extract the folder
 Open `index.html` directly in your browser
     
 ## Screenshots
+![Screenshot_2025-06-27_16-00-17](https://github.com/user-attachments/assets/bb66fc3e-6fd4-4162-9da1-916447b9fe05)
+![Screenshot_2025-06-27_15-59-55](https://github.com/user-attachments/assets/c5d2f3c2-f428-4e57-94a9-688396b9138a)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
 
