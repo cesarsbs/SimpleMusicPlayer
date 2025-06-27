@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple Music Player</title>
+    <link rel="icon" href="media/music2.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/cc99d455d0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <input type="file" id="file-input" accept="audio/*" style="display: none;" />
+            <a id="import-song-btn">Import Song</a>
+            <input type="file" id="dir-input" webkitdirectory directory multiple style="display: none;">
+            <a id="import-playlist-btn">Import Playlist</a>
+        </div>
+        
+       
+       
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <div onclick="openNav()" class="cirlce">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+
+                <img src="media/images.png" id="song-cover" class="song-img">
+                <div id="song-name" class="song-name">Track</div>
+                <div id="song-album" class="song-artist">Album</div>
+                <div id="song-artist" class="song-artist">Artist</div>
+            
+            
+            <audio id="playing-song"></audio>
+
+            <input type="range" value="0" id="progress-bar">
+
+
+            <div class="controls">
+                <div onclick="playPrev()"><i class="fa-solid fa-backward-step" id="prev-song"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="playpause-song"></i></div>
+                <div onclick="playNext()"><i class="fa-solid fa-forward-step" id="next-song"></i></div>
+            </div>
+
+           
+        </div>
+
+        <ul id="playlist" class="playlist">
+        </ul>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
